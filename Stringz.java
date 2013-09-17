@@ -29,7 +29,8 @@ public class Stringz {
 		// count("people", "e");
 
 		// isAbecedarian("abdest");
-		System.out.println(isAbecedarian("Spencer"));
+		// System.out.println(isAbecedarian("abdl"));
+		// System.out.println(isDupledrome("aabdl"));
 		
 	}
 
@@ -43,6 +44,21 @@ public class Stringz {
 
 		return true;
 	}
+
+	public static boolean isDupledrome(String s) {
+		
+		for (int i= 0; i< s.length()-1; i++) {
+			if (s.charAt(i) == s.charAt(i+1)) {
+				return true;
+			}
+		}
+
+		return false;
+	}
+
+	
+	
+
 
 	// public static int count(String s, String t) {
 	// 	int sum = 0;
