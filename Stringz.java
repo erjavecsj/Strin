@@ -31,7 +31,7 @@ public class Stringz {
 		// isAbecedarian("abdest");
 		// System.out.println(isAbecedarian("abdl"));
 		// System.out.println(isDupledrome("aabdl"));
-		
+		System.out.println(isCaptainCrunch("spencer"));
 	}
 
 	public static boolean isAbecedarian(String s) {
@@ -56,7 +56,17 @@ public class Stringz {
 		return false;
 	}
 
-	
+	public static String isCaptainCrunch(String s) {
+			
+			for (int i=0; i < s.length(); i++) {
+
+				
+				s.charAt(i) += 13;
+				 
+			}
+
+			return s;
+	}
 	
 
 
